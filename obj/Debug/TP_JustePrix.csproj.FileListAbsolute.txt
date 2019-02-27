@@ -1,0 +1,15 @@
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\bin\Debug\TP_JustePrix.exe.config
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\bin\Debug\TP_JustePrix.exe
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\bin\Debug\TP_JustePrix.pdb
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\MainWindow.g.cs
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\App.g.cs
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix_MarkupCompile.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix_MarkupCompile.lref
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\MainWindow.baml
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.g.resources
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.Properties.Resources.resources
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.exe
+C:\Users\Dell\source\repos\TP_JustePrix_Calculatrice\TP_JustePrix\obj\Debug\TP_JustePrix.pdb
