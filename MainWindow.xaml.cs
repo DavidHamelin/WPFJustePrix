@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace TP_JustePrix
 {
@@ -50,8 +51,8 @@ namespace TP_JustePrix
 
         void YouWin()
         {
+            TextInfo.Foreground = Brushes.Green;
             TextInfo.Text = "BRAVO tu as gagné !";
-            TextInfo.FontSize += 10;
         }
 
         int PickANumber()
@@ -72,7 +73,7 @@ namespace TP_JustePrix
 
         private void TryAgain_Click(object sender, RoutedEventArgs e)
         {
-            TextInfo.FontSize -= 10;
+            TextInfo.Foreground = Brushes.Black;
             NewGame();
         }
 
@@ -116,6 +117,12 @@ namespace TP_JustePrix
             numberTry += 1;
             TryCounterUpdate();
             return pickedNumber;
+        }
+
+        private void UserAnswer_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

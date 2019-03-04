@@ -10,7 +10,7 @@
         <Image Source="Img/calculator.jpg" HorizontalAlignment="Left" Height="200" Stretch="Uniform" VerticalAlignment="Top" Margin="30,80,0,0" />
         <TextBlock x:Name="GameTitle" HorizontalAlignment="Left" Margin="266,48,0,0" TextWrapping="Wrap" Text="Le Juste Prix" VerticalAlignment="Top" Height="68" Width="366" FontSize="48" FontFamily="Gungsuh" Foreground="#FF2F82C7"/>
         <TextBlock x:Name="Rules" HorizontalAlignment="Left" Margin="266,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="285" FontSize="14"><Run Text="Tentez de trouver le prix de cette calculatrice"/><LineBreak/><Run Text="(entre 1 et 50€) :"/></TextBlock>
-        <TextBox x:Name="UserAnswer" HorizontalAlignment="Left" Height="35" Margin="266,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="16"/>
+        <TextBox x:Name="UserAnswer" HorizontalAlignment="Left" Height="35" Margin="266,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="16" PreviewTextInput="UserAnswer_PreviewTextInput"/>
         <TextBlock x:Name="TextInfo" HorizontalAlignment="Left" Margin="266,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="285" FontSize="14" Foreground="Black"/>
         <TextBlock x:Name="Counter" HorizontalAlignment="Left" Margin="266,241,0,0" TextWrapping="Wrap" Text="Nombre d'essais : 0" VerticalAlignment="Top" Height="22" Width="135"/>
         <Button x:Name="Confirm" Content="Valider" HorizontalAlignment="Left" Margin="449,150,0,0" VerticalAlignment="Top" Width="102" Height="35" Foreground="White" FontSize="16" FontWeight="Bold" Click="Confirm_Click">
@@ -22,7 +22,28 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="tryAgain" Content="Réessayer" HorizontalAlignment="Left" Margin="266,264,0,0" VerticalAlignment="Top" Width="74" Height="32" Click="TryAgain_Click"/>
+
+        <Button x:Name="tryAgain" HorizontalAlignment="Left" Margin="266,264,0,0" VerticalAlignment="Top" Width="74" Height="74" Click="TryAgain_Click">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="100">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF127FBD" Offset="0"/>
+                                <GradientStop Color="#FF0AEE86" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <TextBlock Text="Retry" Foreground="White" 
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Margin="0,10,0,0"
+                                           Height="40"
+                                           FontSize="20"></TextBlock>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
         <TextBlock HorizontalAlignment="Left" Margin="405,159,0,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" Width="24" Height="25" FontSize="20"/>
     </Grid>
 </Window>
